@@ -26,6 +26,7 @@ CREATE TABLE `file` (
   `filenumber` varchar(255) NOT NULL,
   `datecreated` date NOT NULL,
   `casenumber` int NOT NULL AUTO_INCREMENT,
+ 
   PRIMARY KEY (`casenumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -37,7 +38,6 @@ CREATE TABLE `user` (
   `lastname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
